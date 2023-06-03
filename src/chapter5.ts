@@ -17,6 +17,7 @@ const user1 = {
   name: "이정환",
   role: Role.ADMIN,
   language: Language.korean,
+  
 };
 
 const user2 = {

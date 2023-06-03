@@ -28,4 +28,5 @@ let config: {
   apiKey: "akakdk",
 };
 
-config.apiKey = "dwdw";
+//config.apiKey = "dwdw";
+//이런식으로 값을 변경할 수 없음
