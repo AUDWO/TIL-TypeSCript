@@ -5,8 +5,13 @@
  
  */
 
+type Person = {
+  name: string;
+  age: number;
+};
+
 //이렇게 타입을 좁혀주는 if문을 타입 가드라고 한다.
-function func(value: number | string | Date) {
+function func(value: number | string | Date | null | Person) {
   if (typeof value === "number") {
     console.log(value.toFixed());
   } else if (typeof value === "string") {
@@ -17,7 +22,10 @@ function func(value: number | string | Date) {
   }
   //else if(value instanceof Person)
   //instance뒤에 타입이 오면 안된다.
-  else if ("age" in value) {
+
+  //in 뒤에는 null이나 undefined값이 나오면 안된다.
+  else if (value && "age" in value) {
+    console.log(`${value.name}은 ${value.age}살 입니다`);
   }
 }
 
