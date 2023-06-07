@@ -18,5 +18,13 @@ interface Dog {
 */
 
 interface Dog extends Animal {
+  //name프로퍼티의 타입을 내가 원하는 타입으로 재정의 할 수 있다.
+  //단 기존 타입의 서브타입으로만 가능
   isBark: boolean;
 }
+
+interface Cat extends Animal {
+  isScratch: boolean;
+}
+
+interface DogCat extends Dog, Cat {}
