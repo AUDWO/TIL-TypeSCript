@@ -21,10 +21,10 @@ function getSum(...rest: number[]) {
   let sum = 0;
   console.log(rest);
   rest.forEach((it) => (sum += it));
-  console.log(sum);
   return sum;
 }
 
-getSum(1, 2, 3, 4, 5); //15
+const eg = getSum(1, 2, 3, 4, 5); //15
+console.log(eg);
 
 console.log("dwdw");
