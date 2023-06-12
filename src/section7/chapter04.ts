@@ -115,6 +115,7 @@ interface User2<T> {
 }
 
 function goToSchool(user: User2<Student>) {
+  //굳이 타입가드를 적지 않아도 된다.
   const school = user.profile.school;
   console.log(`${school}에 잘 오셨습니다.`);
 }
@@ -128,3 +129,16 @@ let studentUser2: User2<Student> = {
 };
 
 goToSchool(studentUser2);
+
+interface User3<T> {
+  name: string;
+  profile: T;
+}
+
+let aa: User3<Student> = {
+  name: "ㅊㅊㅊ",
+  profile: {
+    type: "student",
+    school: "dwdd",
+  },
+};

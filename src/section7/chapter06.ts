@@ -38,6 +38,7 @@ interface Post {
   content: string;
 }
 
+//promise로 Post타입을 반환한다.
 function fetchPost(): Promise<Post> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {

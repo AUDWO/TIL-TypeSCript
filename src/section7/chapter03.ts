@@ -31,3 +31,4 @@ function forEach<T>(arr: T[], callback: (item: T) => void) {
 forEach(arr2, (it) => {
   console.log(it.toFixed());
 });
+
