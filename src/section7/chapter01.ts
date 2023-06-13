@@ -17,14 +17,4 @@ let str = func("string");
 
 let arr = func<[number, number, number]>([1, 2, 3]);
 
-type Person3 = typeof person2;
 
-const person2 = {
-  name: "이정환",
-  age: 27,
-  location: "대전",
-};
-
-function getPropertyKey3(person: Person3, key: keyof typeof person2) {
-  return person[key];
-}
