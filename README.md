@@ -3,7 +3,7 @@
 ## It's a record of the results of studying type script
 
 
-### 1.Type
+## 1.Type
 
 #### 1.1. Primitive type & Literal type 
 #### 1.2. Array & Tuple
@@ -13,7 +13,7 @@
 #### 1.6. Any & Unknown
 #### 1.7. Void & Never
 
-### 2. Understanding TypeScript
+## 2. Understanding TypeScript
 
 #### 2.1. Type is set
 #### 2.2. Type hierarchy
