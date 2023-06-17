@@ -1,6 +1,6 @@
 # TIL-TypeScript
 
-## It's a record of the results of studying type script
+## It's a record of the results of studying TypeScript
 
 
 ## 1.Type
